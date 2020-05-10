@@ -113,7 +113,7 @@ pushd "%DEPLOYMENT_SOURCE%"
   exitWithMessageOnError "npm failed"
   cd - > /dev/null
 fi
-:: 3. Angular Prod Build
+#3. Angular Prod Build
 IF EXIST "%DEPLOYMENT_SOURCE%/.angular-cli.json" (
 echo Building App in %DEPLOYMENT_SOURCE%…
 pushd "%DEPLOYMENT_SOURCE%"
